@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Text-Summarization</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h2>Advanced_AI</h2>
+      <h3>Text Summarization</h3>
+    </div>
+    <div class="form_body">
+      <div class="form_input">
+        <form action="{{url_for('Summarize')}}" , method="post">
+          <textarea
+            name="text"
+            required="required"
+            placeholder="Paste your text here to Summarize"
+          ></textarea>
+          <br />
+          <input type="submit" value="Summarize" />
+          <button type="reset">Refresh</button>
+        </form>
+      </div>
+      <div>
+        <h3>Summarized Text:</h3>
+        <textarea name="output" class="form_output">{{output}}</textarea>
+      </div>
+    </div>
+  </body>
+</html>
