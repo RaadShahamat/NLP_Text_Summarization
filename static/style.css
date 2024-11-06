@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  max-height: 10%;
+  background-color: #990011;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2%;
+}
+
+.navbar h2 {
+  padding: 1rem 0.5rem;
+  font-size: 28px;
+  color: #fde5e1;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.navbar h3 {
+  padding: 0rem 4rem 1rem;
+  font-size: 16px;
+  color: #fcf6f5;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.form_body {
+  display: flex;
+}
+.form_input {
+  margin: 2rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.form_output {
+  margin: 2rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+textarea {
+  resize: none;
+  width: 35rem !important;
+  height: 30rem !important;
+  background-color: azure;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar h2 {
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    color: #fde5e1;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .navbar h3 {
+    padding: 5px 15px;
+    font-size: 14px;
+    text-align: center;
+    color: #fcf6f5;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+}
